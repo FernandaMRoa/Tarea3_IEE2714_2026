@@ -12,15 +12,15 @@ informe.
 ```
 Tarea3_IEE2714_2026/
 ├── p1_filtro_notch.py           Pregunta 1: eliminación de ruido periódico con filtros notch
-├── p2_deconvolucion.py          Pregunta 2: Wiener y Tikhonov por descenso de gradiente
 ├── bonus_notch_adaptativo.py    Bonus (P1): selección automática de los parámetros del notch
+├── p2_deconvolucion.py          Pregunta 2: Wiener y Tikhonov por descenso de gradiente
 ├── requirements.txt             dependencias
 ├── imagenes/                    imágenes de entrada
 │   ├── P1.CR2                   imagen RAW con ruido periódico (Pregunta 1 y Bonus)
 │   ├── cameraman.jpg            imagen ideal x (Pregunta 2)
 │   └── psf.png                  PSF h de 15x15 (Pregunta 2)
-├── figuras/                     figuras generadas (p1/, p2/, bonus/)
-└── resultados/                  métricas generadas (p1_resultados.json, p2_resultados.json, bonus_resultados.json)
+├── figuras/                     figuras generadas (p1/, bonus/, p2/)
+└── resultados/                  métricas generadas (p1_resultados.json, bonus_resultados.json, p2_resultados.json)
 ```
 
 ## Instalación
@@ -41,19 +41,19 @@ Los scripts usan rutas relativas, así que deben ejecutarse **desde la carpeta r
 
 ```bash
 python p1_filtro_notch.py
-python p2_deconvolucion.py
 python bonus_notch_adaptativo.py
+python p2_deconvolucion.py
 ```
 
 Cada script:
-- guarda sus figuras en `figuras/p1/`, `figuras/p2/` o `figuras/bonus/` (no se muestran en pantalla;
+- guarda sus figuras en `figuras/p1/`, `figuras/bonus/` o `figuras/p2/` (no se muestran en pantalla;
   para verlas, cambiar `MOSTRAR = True` al inicio del script),
 - guarda todos los números citados en el informe en `resultados/*.json`,
 - imprime en la consola las tablas principales.
 
 Los resultados son reproducibles: la Pregunta 1 no tiene componentes aleatorias y en la Pregunta 2
-el ruido se genera con semilla fija (`SEMILLA = 0`). Tiempo aproximado: P1 ~30 s, P2 ~1 min,
-Bonus ~30 s.
+el ruido se genera con semilla fija (`SEMILLA = 0`). Tiempo aproximado: P1 ~30 s, Bonus ~30 s,
+P2 ~1 min.
 
 ## Pregunta 1 — Filtrado notch (`p1_filtro_notch.py`)
 
@@ -83,6 +83,18 @@ Parámetros configurables al inicio del script:
 | `06_final.png` | configuración final (punto 4) |
 | `07_un_solo_notch.png` | pregunta guiada: eliminar solo un notch del par |
 
+## Bonus — Selección adaptativa del notch (`bonus_notch_adaptativo.py`)
+
+Busca automáticamente el centro y el ancho del notch Gaussiano que minimizan la varianza local media
+en tres regiones homogéneas de cielo. Como minimizar solo la varianza lleva al ancho más grande del
+rango (filtrado excesivo), se agrega un criterio simple: elegir σ en la meseta de la función
+objetivo (mínima pendiente de J vs log σ).
+
+| Figura | Contenido |
+|---|---|
+| `01_funcion_objetivo.png` | función objetivo, parámetros seleccionados y costo de filtrar de más |
+| `02_resultado.png` | resultado con ambos criterios |
+
 ## Pregunta 2 — Deconvolución (`p2_deconvolucion.py`)
 
 Se degrada `cameraman.jpg` con la PSF `psf.png` y ruido Gaussiano (σn = 0.005, 0.02 y 0.05). En
@@ -100,15 +112,3 @@ toda la pregunta se usa el mismo modelo de **convolución circular** implementad
 | `04_tikhonov_convergencia.png`, `05_criterio_detencion.png` | Tikhonov iterativo: λ, τ y criterio de detención (punto 3) |
 | `06_comparacion_final.png`, `07_iterativo_vs_cerrado.png` | solución iterativa vs cerrada (punto 4) |
 | `08_HT_psf_no_simetrica.png` | pregunta guiada: implementación de Hᵀ |
-
-## Bonus — Selección adaptativa del notch (`bonus_notch_adaptativo.py`)
-
-Busca automáticamente el centro y el ancho del notch Gaussiano que minimizan la varianza local media
-en tres regiones homogéneas de cielo. Como minimizar solo la varianza lleva al ancho más grande del
-rango (filtrado excesivo), se agrega un criterio simple: elegir σ en la meseta de la función
-objetivo (mínima pendiente de J vs log σ).
-
-| Figura | Contenido |
-|---|---|
-| `01_funcion_objetivo.png` | función objetivo, parámetros seleccionados y costo de filtrar de más |
-| `02_resultado.png` | resultado con ambos criterios |
