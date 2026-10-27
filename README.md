@@ -1,8 +1,5 @@
 # Tarea 3 — IEE2714 Fundamentos de Procesamiento de Imágenes (2° 2026)
 
-**Filtrado en frecuencia y deconvolución regularizada**
-María Fernanda Muñoz — Pontificia Universidad Católica de Chile
-
 Este repositorio contiene el código completo de la Tarea 3. Cada pregunta está resuelta en un
 script independiente de Python que genera todas las figuras y los valores numéricos usados en el
 informe.
@@ -25,13 +22,11 @@ Tarea3_IEE2714_2026/
 
 ## Instalación
 
-Se probó con Python 3.10 o superior.
-
 ```bash
 pip install -r requirements.txt
 ```
 
-`rawpy` se usa solo para leer el archivo RAW `P1.CR2`. La FFT/IFFT es la de `numpy`/`scipy`; no se
+`rawpy` se usa solo para leer el archivo RAW `P1.CR2`. La FFT/IFFT es la de `numpy`/`scipy`. No se
 usan funciones externas de filtros notch, deconvolución de Wiener, Tikhonov, restauración ni
 optimizadores.
 
@@ -46,20 +41,19 @@ python p2_deconvolucion.py
 ```
 
 Cada script:
-- guarda sus figuras en `figuras/p1/`, `figuras/bonus/` o `figuras/p2/` (no se muestran en pantalla;
-  para verlas, cambiar `MOSTRAR = True` al inicio del script),
+- guarda sus figuras en `figuras/p1/`, `figuras/bonus/` o `figuras/p2/` (no se muestran en pantalla.
+  Para verlas, cambiar `MOSTRAR = True` al inicio del script),
 - guarda todos los números citados en el informe en `resultados/*.json`,
 - imprime en la consola las tablas principales.
 
 Los resultados son reproducibles: la Pregunta 1 no tiene componentes aleatorias y en la Pregunta 2
-el ruido se genera con semilla fija (`SEMILLA = 0`). Tiempo aproximado: P1 ~30 s, Bonus ~30 s,
-P2 ~1 min.
+el ruido se genera con semilla fija (`SEMILLA = 0`).
 
 ## Pregunta 1 — Filtrado notch (`p1_filtro_notch.py`)
 
 La imagen `P1.CR2` (nebulosa de Orión) se lee con `rawpy` y se pasa a escala de grises. Tiene un
 patrón de franjas verticales que se repite cada 4 columnas, que aparece en el espectro como dos
-picos en (fy, fx) = (0, ±0.25) ciclos/píxel.
+peaks en (fy, fx) = (0, ±0.25) ciclos/píxel.
 
 Cadena implementada: padding configurable → FFT 2D centrada → función de transferencia notch reject
 → multiplicación del espectro complejo → IFFT → recorte al tamaño original.
@@ -87,7 +81,7 @@ Parámetros configurables al inicio del script:
 
 Busca automáticamente el centro y el ancho del notch Gaussiano que minimizan la varianza local media
 en tres regiones homogéneas de cielo. Como minimizar solo la varianza lleva al ancho más grande del
-rango (filtrado excesivo), se agrega un criterio simple: elegir σ en la meseta de la función
+rango (filtrado excesivo), se agrega un criterio simple: elegir σ en la Zona plana de la función
 objetivo (mínima pendiente de J vs log σ).
 
 | Figura | Contenido |
