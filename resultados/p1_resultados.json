@@ -1,0 +1,327 @@
+{
+  "imagen": {
+    "forma": [
+      2856,
+      4290
+    ],
+    "media": 0.2975543141365051
+  },
+  "patron_periodo4_cielo": [
+    -0.018144801259040833,
+    -0.0003606826066970825,
+    0.019322320818901062,
+    -0.0008168518543243408
+  ],
+  "peaks_espectro": [
+    {
+      "fy": 0.0,
+      "fx": -0.2501165501165501,
+      "log_mag": 11.034425735473633
+    },
+    {
+      "fy": 0.0,
+      "fx": 0.2501165501165501,
+      "log_mag": 11.034425735473633
+    },
+    {
+      "fy": 0.0,
+      "fx": 0.24988344988344988,
+      "log_mag": 11.031649589538574
+    },
+    {
+      "fy": 0.0,
+      "fx": -0.24988344988344988,
+      "log_mag": 11.031649589538574
+    },
+    {
+      "fy": 0.0,
+      "fx": -0.24965034965034966,
+      "log_mag": 10.242554664611816
+    },
+    {
+      "fy": 0.0,
+      "fx": 0.24965034965034966,
+      "log_mag": 10.242554664611816
+    }
+  ],
+  "mediana_log_espectro": 4.608784198760986,
+  "barrido_anchos": {
+    "ideal": [
+      {
+        "amp_residual_cielo": 0.00036925216959264227,
+        "amp_residual_nebulosa": 0.0013549266996211585,
+        "amp_residual_borde_izq": 0.014103702112670268,
+        "amp_residual_borde_der": 0.013423179844890195,
+        "amp_residual_borde_sup": 0.0009821334183170495,
+        "perdida_detalle_nebulosa": 0.0014365266542881727,
+        "artefactos_cielo": 0.0024541353341192007,
+        "ancho": 0.0005
+      },
+      {
+        "amp_residual_cielo": 0.0005654215970398688,
+        "amp_residual_nebulosa": 0.00040178326614804974,
+        "amp_residual_borde_izq": 0.009720118015095385,
+        "amp_residual_borde_der": 0.008454094687733315,
+        "amp_residual_borde_sup": 0.0009771474002483595,
+        "perdida_detalle_nebulosa": 0.001729014329612255,
+        "artefactos_cielo": 0.000989793916232884,
+        "ancho": 0.001
+      },
+      {
+        "amp_residual_cielo": 0.00022085830558736348,
+        "amp_residual_nebulosa": 6.813222503965961e-05,
+        "amp_residual_borde_izq": 0.009716475266844393,
+        "amp_residual_borde_der": 0.008303400606195915,
+        "amp_residual_borde_sup": 0.000649665124837941,
+        "perdida_detalle_nebulosa": 0.0018516588024795055,
+        "artefactos_cielo": 0.0007750525255687535,
+        "ancho": 0.002
+      },
+      {
+        "amp_residual_cielo": 9.03949002185428e-05,
+        "amp_residual_nebulosa": 0.00014830901105003662,
+        "amp_residual_borde_izq": 0.0158373672642313,
+        "amp_residual_borde_der": 0.014601107369592924,
+        "amp_residual_borde_sup": 0.000634275146106801,
+        "perdida_detalle_nebulosa": 0.0019036161247640848,
+        "artefactos_cielo": 0.0010873402934521437,
+        "ancho": 0.004
+      },
+      {
+        "amp_residual_cielo": 1.3617872256069536e-05,
+        "amp_residual_nebulosa": 0.00015651131082878404,
+        "amp_residual_borde_izq": 0.009965583503223276,
+        "amp_residual_borde_der": 0.00898780806017625,
+        "amp_residual_borde_sup": 0.00038954334305305835,
+        "perdida_detalle_nebulosa": 0.0020492826588451862,
+        "artefactos_cielo": 0.0012119669700041413,
+        "ancho": 0.008
+      }
+    ],
+    "gaussiano": [
+      {
+        "amp_residual_cielo": 0.001491607851367951,
+        "amp_residual_nebulosa": 0.0009671722017600046,
+        "amp_residual_borde_izq": 0.013230075084218104,
+        "amp_residual_borde_der": 0.011926353385740105,
+        "amp_residual_borde_sup": 0.0016762665190052533,
+        "perdida_detalle_nebulosa": 0.0009948007063940167,
+        "artefactos_cielo": 0.001030517858453095,
+        "ancho": 0.0005
+      },
+      {
+        "amp_residual_cielo": 0.0001722046741430411,
+        "amp_residual_nebulosa": 0.0003326791871113096,
+        "amp_residual_borde_izq": 0.010641734580303966,
+        "amp_residual_borde_der": 0.009282982468249067,
+        "amp_residual_borde_sup": 0.0008853548459515979,
+        "perdida_detalle_nebulosa": 0.0015123368939384818,
+        "artefactos_cielo": 0.00034910652902908623,
+        "ancho": 0.001
+      },
+      {
+        "amp_residual_cielo": 6.371153856123752e-05,
+        "amp_residual_nebulosa": 0.00020209347075402138,
+        "amp_residual_borde_izq": 0.011728135338368218,
+        "amp_residual_borde_der": 0.010386681610800511,
+        "amp_residual_borde_sup": 0.00044299402861611885,
+        "perdida_detalle_nebulosa": 0.0017261076718568802,
+        "artefactos_cielo": 0.000401777884690091,
+        "ancho": 0.002
+      },
+      {
+        "amp_residual_cielo": 2.3997005249003527e-05,
+        "amp_residual_nebulosa": 0.00016913425749157468,
+        "amp_residual_borde_izq": 0.011792112238658259,
+        "amp_residual_borde_der": 0.010543037946810841,
+        "amp_residual_borde_sup": 0.0004199603309352175,
+        "perdida_detalle_nebulosa": 0.0018523798789829016,
+        "artefactos_cielo": 0.0006658154306933284,
+        "ancho": 0.004
+      },
+      {
+        "amp_residual_cielo": 7.577208226250019e-06,
+        "amp_residual_nebulosa": 0.00015997061110214393,
+        "amp_residual_borde_izq": 0.009804442600325546,
+        "amp_residual_borde_der": 0.00882683510460625,
+        "amp_residual_borde_sup": 0.00025462342804992655,
+        "perdida_detalle_nebulosa": 0.0020354061853140593,
+        "artefactos_cielo": 0.0011640574084594846,
+        "ancho": 0.008
+      }
+    ]
+  },
+  "amp_patron_original": {
+    "cielo": 0.018734948220872332,
+    "nebulosa": 0.01170066685785385
+  },
+  "padding": [
+    {
+      "amp_residual_cielo": 5.833895664808535e-05,
+      "amp_residual_nebulosa": 0.00020208976654042924,
+      "amp_residual_borde_izq": 0.016850395685984305,
+      "amp_residual_borde_der": 0.016468192997472316,
+      "amp_residual_borde_sup": 0.0009326957192722567,
+      "perdida_detalle_nebulosa": 0.0017261095345020294,
+      "artefactos_cielo": 0.0003998394822701812,
+      "modo": "ninguno",
+      "tam": 0,
+      "tiempo_s": 0.4781562999705784
+    },
+    {
+      "amp_residual_cielo": 6.242360429969242e-05,
+      "amp_residual_nebulosa": 0.0002020964726138154,
+      "amp_residual_borde_izq": 0.012518602027966326,
+      "amp_residual_borde_der": 0.011780329728353429,
+      "amp_residual_borde_sup": 0.005250002861300932,
+      "perdida_detalle_nebulosa": 0.0017261079046875238,
+      "artefactos_cielo": 0.0004006175440736115,
+      "modo": "ceros",
+      "tam": 32,
+      "tiempo_s": 0.652755499992054
+    },
+    {
+      "amp_residual_cielo": 6.539965104082938e-05,
+      "amp_residual_nebulosa": 0.00020209407330054485,
+      "amp_residual_borde_izq": 0.010422528404878114,
+      "amp_residual_borde_der": 0.009373140387266523,
+      "amp_residual_borde_sup": 0.008182668296286383,
+      "perdida_detalle_nebulosa": 0.0017261096509173512,
+      "artefactos_cielo": 0.00040079845348373055,
+      "modo": "ceros",
+      "tam": 128,
+      "tiempo_s": 0.7552595000015572
+    },
+    {
+      "amp_residual_cielo": 6.5400559403248e-05,
+      "amp_residual_nebulosa": 0.00020209392278444245,
+      "amp_residual_borde_izq": 0.010421171572097068,
+      "amp_residual_borde_der": 0.009370660446541914,
+      "amp_residual_borde_sup": 0.008189996752440941,
+      "perdida_detalle_nebulosa": 0.0017261095345020294,
+      "artefactos_cielo": 0.0004007982788607478,
+      "modo": "ceros",
+      "tam": 512,
+      "tiempo_s": 1.2154995999881066
+    },
+    {
+      "amp_residual_cielo": 6.219336135149002e-05,
+      "amp_residual_nebulosa": 0.00020209609996254865,
+      "amp_residual_borde_izq": 0.012084332465165704,
+      "amp_residual_borde_der": 0.011223206077083853,
+      "amp_residual_borde_sup": 0.0006985744092780233,
+      "perdida_detalle_nebulosa": 0.0017261095345020294,
+      "artefactos_cielo": 0.000401006342144683,
+      "modo": "simetrico",
+      "tam": 32,
+      "tiempo_s": 0.6276237000129186
+    },
+    {
+      "amp_residual_cielo": 6.371153856123752e-05,
+      "amp_residual_nebulosa": 0.00020209347075402138,
+      "amp_residual_borde_izq": 0.011728135338368218,
+      "amp_residual_borde_der": 0.010386681610800511,
+      "amp_residual_borde_sup": 0.00044299402861611885,
+      "perdida_detalle_nebulosa": 0.0017261076718568802,
+      "artefactos_cielo": 0.000401777884690091,
+      "modo": "simetrico",
+      "tam": 128,
+      "tiempo_s": 0.7272055000066757
+    },
+    {
+      "amp_residual_cielo": 6.369695323209774e-05,
+      "amp_residual_nebulosa": 0.00020209769891510265,
+      "amp_residual_borde_izq": 0.012851277473325037,
+      "amp_residual_borde_der": 0.011493615767321882,
+      "amp_residual_borde_sup": 0.0004547042372225887,
+      "perdida_detalle_nebulosa": 0.0017261101165786386,
+      "artefactos_cielo": 0.0004018122854176909,
+      "modo": "simetrico",
+      "tam": 512,
+      "tiempo_s": 1.1262481000158004
+    },
+    {
+      "amp_residual_cielo": 6.789808426722394e-05,
+      "amp_residual_nebulosa": 0.00020209424231529347,
+      "amp_residual_borde_izq": 0.0006906737763730759,
+      "amp_residual_borde_der": 0.015868602233738448,
+      "amp_residual_borde_sup": 0.00038861910493932,
+      "perdida_detalle_nebulosa": 0.0017261086031794548,
+      "artefactos_cielo": 0.0004027325485367328,
+      "modo": "reflejo",
+      "tam": 128,
+      "tiempo_s": 0.7371539999730885
+    },
+    {
+      "amp_residual_cielo": 6.238358815830986e-05,
+      "amp_residual_nebulosa": 0.00020209352287140557,
+      "amp_residual_borde_izq": 0.00894193436292431,
+      "amp_residual_borde_der": 0.007847044972552219,
+      "amp_residual_borde_sup": 0.0024886032232153935,
+      "perdida_detalle_nebulosa": 0.0017261096509173512,
+      "artefactos_cielo": 0.00040522569906897843,
+      "modo": "replicar",
+      "tam": 128,
+      "tiempo_s": 0.726007400022354
+    }
+  ],
+  "final": {
+    "tipo": "gaussiano",
+    "ancho": 0.002,
+    "notches": [
+      [
+        0.0,
+        0.25
+      ]
+    ],
+    "padding_modo": "simetrico",
+    "padding_tam": 128,
+    "amp_residual_cielo": 6.371153856123752e-05,
+    "amp_residual_nebulosa": 0.00020209347075402138,
+    "amp_residual_borde_izq": 0.011728135338368218,
+    "amp_residual_borde_der": 0.010386681610800511,
+    "amp_residual_borde_sup": 0.00044299402861611885,
+    "perdida_detalle_nebulosa": 0.0017261076718568802,
+    "artefactos_cielo": 0.000401777884690091,
+    "max_abs_imag": 4.172325134277344e-07
+  },
+  "traza_frecuencia": [
+    {
+      "fila": 1556,
+      "col": 3409,
+      "fy": 0.0,
+      "fx": 0.2498900131984162,
+      "distancia_al_notch": 0.0001099868015838057,
+      "F_real": 1033.00146484375,
+      "F_imag": -72305.578125,
+      "H": 0.001510918140411377,
+      "G_real": 1.560780644416809,
+      "G_imag": -109.24781036376953
+    },
+    {
+      "fila": 1556,
+      "col": 3419,
+      "fy": 0.0,
+      "fx": 0.2520897492300924,
+      "distancia_al_notch": 0.002089749230092419,
+      "F_real": -4909.36376953125,
+      "F_imag": -569.778564453125,
+      "H": 0.420665979385376,
+      "G_real": -2065.202392578125,
+      "G_imag": -239.68646240234375
+    },
+    {
+      "simetrico_fy": 0.0,
+      "simetrico_fx": -0.2498900131984162,
+      "F_real": 1033.00146484375,
+      "F_imag": 72305.578125,
+      "H": 0.001510918140411377
+    }
+  ],
+  "un_solo_notch": {
+    "amp_residual_cielo_real": 0.009352563917275899,
+    "amp_original_cielo": 0.018734948220872332,
+    "max_abs_imag": 0.00991065800189972,
+    "rms_imag_cielo": 0.006638458464294672
+  }
+}
